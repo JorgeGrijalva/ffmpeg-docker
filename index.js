@@ -23,6 +23,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 const register = require("module-alias/register");
 const app = require("@bin/app");
+app.set("trust proxy", true);
 const logger = require("@utils/logger")(module);
 const http = require("http");
 
