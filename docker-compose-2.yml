@@ -3,8 +3,6 @@
 # DATE: 30/10/2023
 # DESC: Run ffmpeg-docker prebuilt version
 
-version: "3.8"
-
 services:
     ffmpeg:
         image: ghcr.io/ryanmccartney/ffmpeg-docker:latest
@@ -12,7 +10,7 @@ services:
         volumes:
             - ./data:/home/node/app/data
         environment:
-            PORT: 80
+            PORT: 4566
             WEB_GUI: "true"
             NODE_ENV: "production"
         #network_mode: "host"
