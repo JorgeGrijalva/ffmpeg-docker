@@ -15,6 +15,6 @@ services:
             PORT: 80
             WEB_GUI: "true"
             NODE_ENV: "production"
-        network_mode: "host"
+        #network_mode: "host"
         ports:
             - 4566:4566
