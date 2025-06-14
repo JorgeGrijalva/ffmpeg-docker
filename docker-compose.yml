@@ -41,11 +41,11 @@ services:
         #    - /dev/blackmagic/io0:/dev/blackmagic/io0
         environment:
             NODE_ENV: "development"
-            PORT: 80
+            PORT: 4566
             HOST: "localhost"
             WEB_GUI: "true"
             AUTH_KEY: "averysecretkey"
             AUTH_USER: admin
             AUTH_PASSWORD: admin
         ports:
-            - 80:80
+            - 4566:4566
